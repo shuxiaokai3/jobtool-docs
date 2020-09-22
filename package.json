@@ -1,0 +1,23 @@
+{
+  "name": "jobtool-docs",
+  "version": "0.0.1",
+  "description": "管理工具学习和开发文档",
+  "main": "index.js",
+  "authors": {
+    "name": "shuxiaokai",
+    "email": "2581105856@qq.com"
+  },
+  "repository": "/jobtool-docs",
+  "scripts": {
+    "dev": "vuepress dev src --temp .temp",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3",
+    "watchpack": "^1.6.1"
+  },
+  "resolutions": {
+    "watchpack": "1.6.1"
+  }
+}
