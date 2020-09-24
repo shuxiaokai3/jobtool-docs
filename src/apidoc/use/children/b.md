@@ -32,15 +32,17 @@
 2. `F2`可以对文档进行重命名，[完整快捷方式](./b.html#快捷方式)
    :::
 
+---
+
 ## 编写文档
 
 接下来是接口工具比较核心的部分，在此之前我们将简单介绍一些关于**HTTP 基础与前后端交互**的相关知识，如果你对这部分内容比较熟悉可以跳过本章。
 
-### HTTP 基础与前后端交互
+### HTTP基础
 
-**URI**
+#### URI
 
-下面两段数据都是常见的`请求地址(标准一点应该叫统一资源标识符，后续统一称为请求地址)`，它由 `协议` `主机` `端口` `路径` `查询` `hash`这几个部分组成。
+下面两段数据都是常见的`请求地址(标准一点应该叫统一资源标识符，后续统一称为请求地址)`，它由 `协议` `主机` `端口` `路径` `查询` `hash`这几个部分组成。[URI参考](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Basics_of_HTTP/Identifying_resources_on_the_Web)
 
 ```
 http://192.168.0.112:8080/user?id=3&sex=boy#hash
@@ -52,6 +54,45 @@ https://www.demo.com/user?id=3&sex=boy#hash
 路径(/user)  
 
 ```
+:::tip
+在接口文档中我们将一个完整URL定义为两个部分
+1. 服务器地址(协议+ip或则域名+端口) 
+2. 路径
+
+![服务器地址](../../../.vuepress/public/imgs/use/e.png)
+:::
+
+
+#### 请求方式
+
+常用请求方式：`GET` `POST` `PUT` `DELETE`。
+
+GET请求只支持以`查询字符串`方式进行传值，http://demo.com/user?<font color="#f60">id=2&name=shu</font> 。
+
+
+#### 发送数据类型
+常见传输数据 `查询字符串` `form-data` `application/json` `x-www-form-urlencoded`
+
+:::warning
+1. 接口工具只支持 `查询字符串` `form-data` `application/json`
+2. 发送数据类型只允许 1 种，多种传输类型会让接口变得难以维护。
+3. 文档不再支持`x-www-form-urlencoded`传输格式，json格式的数据传输已经很方便了，单一的传输格式能够减少前后端沟通。
+![发送数据类型](../../../.vuepress/public/imgs/use/f.png)
+:::
+---
+![发送数据类型](../../../.vuepress/public/imgs/use/g.png)
+
+### 请求参数
+
+
+
+### 返回参数
+
+
+
+### 请求头
+
+
 
 
 ## 快捷方式

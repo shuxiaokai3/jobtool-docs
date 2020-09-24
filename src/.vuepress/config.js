@@ -39,7 +39,7 @@ module.exports = {
                                 link: "/apidoc/use/children/a"
                             },
                             {
-                                text: "接口文档编写",
+                                text: "文档编写",
                                 link: "/apidoc/use/children/b"
                             },
                         ]
@@ -84,7 +84,7 @@ module.exports = {
                     path: "/apidoc/use/children/a",
                 },
                 {
-                    title: "接口文档编写",
+                    title: "文档编写",
                     path: "/apidoc/use/children/b"
                 },
             ],
