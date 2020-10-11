@@ -39,7 +39,7 @@ module.exports = {
                                 link: "/apidoc/use/children/a"
                             },
                             {
-                                text: "书写文档",
+                                text: "文档编写",
                                 link: "/apidoc/use/children/b"
                             },
                         ]
@@ -84,7 +84,7 @@ module.exports = {
                     path: "/apidoc/use/children/a",
                 },
                 {
-                    title: "书写文档",
+                    title: "文档编写",
                     path: "/apidoc/use/children/b"
                 },
             ],
@@ -98,4 +98,5 @@ module.exports = {
         },
     },
     plugins: ["@vuepress/plugin-back-to-top", "@vuepress/plugin-medium-zoom"],
+    base: "/docs/"
 };
