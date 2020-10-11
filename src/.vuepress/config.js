@@ -67,7 +67,7 @@ module.exports = {
             },
             {
                 text: "GitHub",
-                link: "https://github.com/shuxiaokai3/jobtool-electron",
+                link: "https://github.com/shuxiaokai3/moyu",
             },
         ],
         sidebarDepth: 3,
